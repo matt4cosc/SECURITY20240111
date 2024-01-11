@@ -1,2 +1,2 @@
 ####
-This is my guide/opnotes to passing the COSC Security test.
+This is my guide/opnotes for passing the COSC Security test.

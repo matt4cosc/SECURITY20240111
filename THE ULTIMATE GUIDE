@@ -41,6 +41,7 @@ Audi'UNION select table_schema,table_name,column_name from information_schema.co
 
 ## LOCAL BUFFER OVERFLOW ##
 SEE DAY 5 FOR THIS INFO
+https://sec.cybbh.io/public/security/latest/lessons/lesson-7-exploit_sg.html#_demo_buffer_overflow_using_gdb_and_env
 
 ## REMOTE BUFFER OVERFLOW ##
 SEE DAY 6 FOR THIS INFO
